@@ -25,4 +25,12 @@ public class Year {
 			Assert.assertEquals(true, l.isLeapYear(2016));
 			
 		}
+		// test All years not divisible by 4 are NOT leap years
+		@Test
+		public void notDivisibleBy4() {
+			LeapYearApp l=new LeapYearApp();
+			Assert.assertEquals(false, l.isLeapYear(2017));
+			
+		}
+
 }
